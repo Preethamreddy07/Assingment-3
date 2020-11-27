@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Renew</title>
+<div class="heading">
+    <h1> Modify</h1>
+</div>
+</head>
+<style>
+   .heading{
+        text-align: center;
+    }
+    .middle{
+        text-align: center;
+    }
+    .button{
+        
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+    }
+</style>
+<body>
+    <div class="middle">
+
+        <h2> Enter Details to modify Your Bus pass Details</h2>
+        <form method="post" action="/Servlet/modify">
+        <br>
+        <br>
+        <label>ID</label>
+        <input type="number" name="id">
+        <label>Name</label>
+        <input type="text" name="nam">
+        <br><br>
+        <label>City</label>
+        <input type="text" name="city">
+        <br><br>
+        <label>Buspass Type</label>
+        <select name="ptype">
+        <option value="General">General</option>
+        <option value="Exclusive">Exclusive</option>
+        </select>
+        <br><br>
+        <label> Bonafide</label>
+        <input type="file" >
+        <br><br>
+        <label>Identity Card</label>
+        <input type="file" >
+        <br>
+        <br>
+        <div class="button">
+
+            <input type="submit" value="Modify">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

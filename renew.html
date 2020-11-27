@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+   .heading{
+        text-align: center;
+    }
+    .middle{
+        text-align: center;
+    }
+    .button{
+        
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+    } 
+</style>
+<body>
+    <div class="heading">
+
+        <h1>Renew BusPass </h1>
+    </div>
+    <div class="middle">
+
+        <form action="/Servlet/renew" method="post">
+        <label>Unique ID number</label>
+        <input type="text" name="id">
+        <div class="button">
+        
+            <input type="submit" value="Renew">
+        </div>
+        <br><br>
+        </form>
+    </div>
+</body>
+</html>
